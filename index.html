@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Préstamo</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Formulario de Préstamo</h1>
+        <form action="/prestamo" method="POST">
+            <div class="mb-3">
+                <label for="id" class="form-label">ID:</label>
+                <input type="text" class="form-control" name="id" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" name="nombre" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" name="apellido" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="titulo" class="form-label">Título del Libro:</label>
+                <input type="text" class="form-control" name="titulo" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="autor" class="form-label">Autor:</label>
+                <input type="text" class="form-control" name="autor" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="editorial" class="form-label">Editorial:</label>
+                <input type="text" class="form-control" name="editorial" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="año" class="form-label">Año:</label>
+                <input type="text" class="form-control" name="año" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
